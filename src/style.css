@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, input, button {
+    font-family: 'Open Sans', sans-serif;
+    background-color:#EEEDDE;
+}
+
+input, button {
+    font-size: 16px;
+}
+
+.head-bar {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #141E27;
+    color: #EEEDDE;
+    position: relative;
+}
+
+.head-bar > div {
+    font-weight: bolder;
+    text-align: center;
+}
+
+.head-bar > .head-bar-nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.head-bar > .head-bar-nav > a {
+    /* background-color; */
+    padding: 6px;
+    border-radius: 2px;
+    margin:5px;
+    text-decoration: none;
+    color: #EEEDDE;
+    font-weight: bolder;
+}
+
+.head-bar > nav a:hover {
+    background-color: #F2E5E5;
+    color: #141E27;
+} 
+
+main {
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 16px;
+
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border-radius: 5px;
+    background-color: #E0DDAA;
+}
+
+.input-section > h2 {
+    text-align: center;
+    color: #203239;
+}
+
+.input-section > form > .input {
+    margin: 8px 0;
+}
+
+.input-section > form > button {
+    background-color: #203239;
+    color: #EEEDDE;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.input-section > form > button > span {
+    font-weight: bold;
+}
+
+.input-section > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.input-section > form > .input > label {
+    color: #203239;
+    font-weight: bold;
+}
+
+.input-section > form > .input-inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input-section > form > .input-inline > label {
+    color: cornflowerblue;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.card {
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.transaction-shelf {
+    margin: 16px 0 0 0;
+    /* border: 1px solid black; */
+    padding: 16px;
+    border-radius: 10px;
+    background-color: #E0DDAA;
+}
+
+.transaction-shelf > h2 {
+    color: #203239;
+}
+
+.transaction-shelf > .transaction-list {
+    padding: 16px;
+}
+
+.transaction-shelf > .transaction-list > .transaction-item {
+    padding: 8px 16px 16px 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.transaction-shelf > .transaction-list > .transaction-item > h3, p {
+    margin: 8px 0;
+}
+
+.transaction-shelf > .transaction-list > .transaction-item > h3 {
+    flex-grow: 10;
+}
+
+.transaction-shelf > .transaction-list > .transaction-item > p {
+    flex-grow: 6;
+}
+
+.transaction-shelf > .transaction-list > .transaction-item > .action > button {
+    border: 0;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.transaction-shelf > .transaction-list > .transaction-item > .action > .green {
+    background-color: #141E27;
+    color: #E0DDAA;
+}
