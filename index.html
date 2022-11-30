@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Financial Planner</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body>
+    <header class="head-bar">
+        <img src="src/budget.png" alt="" class="img-head">
+        <div><h1 class="head-bar-title">Financial Planner</h1></div>
+        <nav class="head-bar-nav">
+            <a href="">Home</a>
+            <a href="">About</a>    
+            <a href="">Content</a>  
+        </nav>
+    </header>
+
+  <main>
+    <section class="input-section card">
+      <h2>Add a Transaction</h2>
+      <form id="inputTransaction">
+        <div class="input">
+          <label for="inputTransactionCategory">Category</label>
+          <input id="inputTransactionCategory" type="text" required>
+        </div>
+        <div class="input">
+          <label for="inputTransactionNote">Note</label>
+          <input id="inputTransactionNote" type="text" required>
+        </div>
+        <div class="input">
+          <label for="inputTransactionAmount">Amount</label>
+          <input id="inputTransactionAmount" type="number" required>
+        </div>
+        <button id="transactionSubmit" type="submit" value="submit"><span>Add Transaction</span></button>
+      </form>
+    </section>
+    
+    <section class="transaction-shelf card">
+      <h2>Transaction History</h2>
+      
+      <div id="TransactionsList" class="transaction-list">
+  <!--      <article class="transaction-item">-->
+  <!--        <h3>Category</h3>-->
+  <!--        <p>Note</p>-->
+  <!--        <p>Amount</p>-->
+  <!--    -->
+  <!--        <div class="action">-->
+  <!--          <button class="green">Edit</button>-->
+  <!--        </div>-->
+  <!--      </article>-->
+      </div>
+    </section>
+  </main>
+
+<script src="./src/main.js"></script>
+
+</body>
+</html>
